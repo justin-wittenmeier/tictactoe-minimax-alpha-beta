@@ -43,7 +43,7 @@ namespace csharp_tictactoe
 
         private void PrintInfo()
         {
-            Console.WriteLine($"Select Move:\n7|8|9\n-+-+-\n4|5|6\n-+-+-\n1|2|3");
+            Console.WriteLine($"Info: \n7|8|9\n-+-+-\n4|5|6\n-+-+-\n1|2|3");
         }
 
         private bool StartScreen()
@@ -78,23 +78,23 @@ namespace csharp_tictactoe
                 Console.WriteLine($"Current Turn: {CurrentTurn}");
                 Console.Write("Select Move: ");
                 input = Console.ReadKey();
-                Console.Write("\n");
+                Console.Write("\n\n");
                 try
                 {
                     move = Int32.Parse(input.KeyChar.ToString()) - 1;
                 }
                 catch ( Exception )
                 {
-                    Console.WriteLine("\nError please only Enter Integers...\n");
+                    Console.WriteLine("\nError please only Enter Integers...\n\n");
                     continue;
                 }
                 if (move == -1)
                 {
-                    Console.WriteLine("\nError please select a number between 1 and 9...\n");
+                    Console.WriteLine("\nError please select a number between 1 and 9...\n\n");
                 }
                 else if (Board[move] != " ")
                 {
-                    Console.WriteLine("\nError please only select empty spaces...\n");
+                    Console.WriteLine("\nError please only select empty spaces...\n\n");
                 }
                 else
                 {

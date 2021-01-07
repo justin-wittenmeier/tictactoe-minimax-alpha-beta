@@ -1,0 +1,32 @@
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.csprojAssemblyReference.cache
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.AssemblyInfoInputs.cache
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.AssemblyInfo.cs
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.csproj.CoreCompileInputs.cache
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.exe
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.deps.json
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.runtimeconfig.json
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.runtimeconfig.dev.json
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.dll
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\ref\csharp-tictactoe.dll
+F:\gdrive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.pdb
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.dll
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\ref\csharp-tictactoe.dll
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.pdb
+F:\gdrive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.genruntimeconfig.cache
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.exe
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.deps.json
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.runtimeconfig.json
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.runtimeconfig.dev.json
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.dll
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\ref\csharp-tictactoe.dll
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\bin\Debug\net5.0\csharp-tictactoe.pdb
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.csprojAssemblyReference.cache
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.AssemblyInfoInputs.cache
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.AssemblyInfo.cs
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.csproj.CoreCompileInputs.cache
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.dll
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\ref\csharp-tictactoe.dll
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.pdb
+C:\Users\justi\Google Drive\Documents\Projects\csharp-tictactoe\obj\Debug\net5.0\csharp-tictactoe.genruntimeconfig.cache

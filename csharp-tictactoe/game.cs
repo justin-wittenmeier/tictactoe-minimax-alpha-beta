@@ -31,20 +31,14 @@ namespace csharp_tictactoe
         private void ClearBoard()
         {
             for (int i = 0; i < 9; i++)
-            {
-                Board[i] = " ";
-            }
+            { Board[i] = " "; }
         }
         
         private void PrintBoard()
-        {
-            Console.WriteLine($"Current Board:\n{Board[6]}|{Board[7]}|{Board[8]}\n-+-+-\n{Board[3]}|{Board[4]}|{Board[5]}\n-+-+-\n{Board[0]}|{Board[1]}|{Board[2]}");
-        }
+        { Console.WriteLine($"Current Board:\n{Board[6]}|{Board[7]}|{Board[8]}\n-+-+-\n{Board[3]}|{Board[4]}|{Board[5]}\n-+-+-\n{Board[0]}|{Board[1]}|{Board[2]}"); }
 
         private void PrintInfo()
-        {
-            Console.WriteLine($"Info: \n7|8|9\n-+-+-\n4|5|6\n-+-+-\n1|2|3");
-        }
+        { Console.WriteLine($"Info: \n7|8|9\n-+-+-\n4|5|6\n-+-+-\n1|2|3"); }
 
         private bool StartScreen()
         {
@@ -56,13 +50,9 @@ namespace csharp_tictactoe
         private void TurnCheck()
         {
             if (CurrentTurn == "O")
-            {
-                PlayerMove();
-            }
+            { PlayerMove(); }
             else
-            {
-                BotMove();
-            }
+            { BotMove(); }
         }
 
         private void PlayerMove()
@@ -80,22 +70,17 @@ namespace csharp_tictactoe
                 input = Console.ReadKey();
                 Console.Write("\n\n");
                 try
-                {
-                    move = Int32.Parse(input.KeyChar.ToString()) - 1;
-                }
+                { move = Int32.Parse(input.KeyChar.ToString()) - 1; }
                 catch ( Exception )
                 {
-                    Console.WriteLine("\nError please only Enter Integers...\n\n");
+                    Console.WriteLine("\nError please only enter integers...\n\n");
                     continue;
                 }
+
                 if (move == -1)
-                {
-                    Console.WriteLine("\nError please select a number between 1 and 9...\n\n");
-                }
+                { Console.WriteLine("\nError please select a number between 1 and 9...\n\n"); }
                 else if (Board[move] != " ")
-                {
-                    Console.WriteLine("\nError please only select empty spaces...\n\n");
-                }
+                { Console.WriteLine("\nError please only select empty spaces...\n\n"); }
                 else
                 {
                     onOff = false;
@@ -110,15 +95,12 @@ namespace csharp_tictactoe
             string GameOverBot()
             {
                 if (Array.IndexOf(Board, " ") == -1)
-                {
-                    return "--";
-                }
+                { return "--"; }
+
                 for (int i = 0; i < Wins.GetLength(0); i++)
                 {
                     if (Board[Wins[i, 0]] == Board[Wins[i, 0] + Wins[i, 1]] && Board[Wins[i, 0]] == Board[Wins[i, 0] + Wins[i, 1] * 2] && Board[Wins[i, 0]] != " ")
-                    {
-                        return Board[Wins[i,0]];
-                    }
+                    { return Board[Wins[i,0]]; }
                 }
                 return null;
             }
@@ -130,17 +112,11 @@ namespace csharp_tictactoe
                 string r = GameOverBot();
                 int[] m;
                 if (r == "O")
-                {
-                    return new int[] {-1, 0};
-                }
+                { return new int[] {-1, 0}; }
                 else if (r == "X")
-                {
-                    return new int[] {2, 0};
-                }
+                { return new int[] {2, 0}; }
                 else if (r == "--")
-                {
-                    return new int[] {0, 0};
-                }
+                { return new int[] {0, 0}; }
 
                 for (int i = 0; i < Board.Length; i++)
                 {
@@ -157,17 +133,12 @@ namespace csharp_tictactoe
                         Board[i] = " ";
 
                         if (maxi >= b)
-                        {
-                            return new int[] {maxi, selected};
-                        }
+                        { return new int[] {maxi, selected}; }
                         if (maxi > a)
-                        {
-                            a = maxi;
-                        }
+                        { a = maxi; }
                     }
                 }
                 return new int[] {maxi, selected};
-
             }
 
             int[] min(int a, int b)
@@ -177,17 +148,11 @@ namespace csharp_tictactoe
                 string r = GameOverBot();
                 int[] m;
                 if (r == "O")
-                {
-                    return new int[] {-1, 0};
-                }
+                { return new int[] {-1, 0}; }
                 else if (r == "X")
-                {
-                    return new int[] {1, 0};
-                }
+                { return new int[] {1, 0}; }
                 else if (r == "--")
-                {
-                    return new int[] {0, 0};
-                }
+                { return new int[] {0, 0}; }
                 for (int i = 0; i < Board.Length; i++)
                 {
                     if (Board[i] == " ")
@@ -204,13 +169,9 @@ namespace csharp_tictactoe
                         Board[i] = " ";
 
                         if (mini <= a)
-                        {
-                            return new int[] {mini, selected};
-                        }
+                        { return new int[] {mini, selected}; }
                         if (mini < b)
-                        {
-                            b = mini;
-                        }
+                        { b = mini; }
                     }
                 }
                 return new int[] {mini, selected};

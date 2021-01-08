@@ -167,7 +167,6 @@ namespace csharp_tictactoe
                         }
 
                         Board[i] = " ";
-
                         if (mini <= a)
                         { return new int[] {mini, selected}; }
                         if (mini < b)

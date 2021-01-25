@@ -94,14 +94,13 @@ namespace csharp_tictactoe
         {
             string GameOverBot()
             {
-                if (Array.IndexOf(Board, " ") == -1)
-                { return "--"; }
-
                 for (int i = 0; i < Wins.GetLength(0); i++)
                 {
                     if (Board[Wins[i, 0]] == Board[Wins[i, 0] + Wins[i, 1]] && Board[Wins[i, 0]] == Board[Wins[i, 0] + Wins[i, 1] * 2] && Board[Wins[i, 0]] != " ")
                     { return Board[Wins[i,0]]; }
                 }
+                if (Array.IndexOf(Board, " ") == -1)
+                { return "--"; }
                 return null;
             }
 
@@ -131,7 +130,6 @@ namespace csharp_tictactoe
                         }
 
                         Board[i] = " ";
-
                         if (maxi >= b)
                         { return new int[] {maxi, selected}; }
                         if (maxi > a)
@@ -167,6 +165,7 @@ namespace csharp_tictactoe
                         }
 
                         Board[i] = " ";
+
                         if (mini <= a)
                         { return new int[] {mini, selected}; }
                         if (mini < b)
@@ -182,12 +181,6 @@ namespace csharp_tictactoe
 
         private bool WinCheck()
         {   
-            if (Array.IndexOf(Board, " ") == -1)
-            {
-                PrintBoard();
-                Console.WriteLine("\n*******\n*Draw!*\n*******");
-                return false;
-            }
             for (int i = 0; i < Wins.GetLength(0); i++)
             {
                 if (Board[Wins[i, 0]] == Board[Wins[i, 0] + Wins[i, 1]] && Board[Wins[i, 0]] == Board[Wins[i, 0] + Wins[i, 1] * 2] && Board[Wins[i, 0]] != " ")
@@ -198,6 +191,12 @@ namespace csharp_tictactoe
                     CurrentTurn = winner;
                     return false;   
                 }
+            }
+            if (Array.IndexOf(Board, " ") == -1)
+            {
+                PrintBoard();
+                Console.WriteLine("\n*******\n*Draw!*\n*******");
+                return false;
             }
             return true;
         }
